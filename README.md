@@ -17,7 +17,7 @@ UT1seconds=UTCseconds+bull
 
 # UTCtoGPS
 The UTC to GPS conversion function reads as input the fractional julian day and returns the corresponding TAI-UTC difference (bull) in seconds. The difference is read from the "tai-utc.dat" file, on the line corresponding to the last leap second difference introduced before the input.
-The function checks for the presence of the conversion table inside the current folder: if not present, the conversion table is donwloaded and written to a file. The file is split into lines and read procedurally, returning the TAI-UTC difference (in seconds) corresponding to the input.
+The function checks for the presence of the conversion table inside the current folder: if not present, the conversion table is donwloaded and written to a file. The file is split into lines and read procedurally, returning the TAI-UTC difference (in seconds) corresponding to the input (remember that GPS time is 19 seconds behind TAI).
 #input: float jdfull
 #output: bull
 
